@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="FormKeeperJS.js"></script>
+</head>
+<body>
+    <h3>Test Id</h3>
+    <input id="txtId" type="text">
+    <h3>Test Password</h3>
+    <input id="txtPw" type="password">
+
+    <h3>Let's Check</h3>
+    <button id="btnSubmit" onclick="check()">Check</button>
+</body>
+<script>
+    // Set Test Value
+    let id = "";
+    let pw = "";
+    let email = "";
+    let phone = "";
+    let phone1 = "";
+    let phone2 = "";
+    let phone3 = "";
+
+    // Get Test Value to <input>
+    function getValue() {
+        id = document.querySelector('#txtId').value;
+        pw = document.querySelector('#txtPw').value;
+    }
+
+    // Let's Check Value
+    function check() {
+        getValue();
+
+        // Test Id
+        console.log(`id check: ${id.isValidId()}`);
+        
+        // Test Password
+        console.log(`pw check: ${pw.isValidPw()}`);
+        
+        
+    }
+</script>
+</html>
