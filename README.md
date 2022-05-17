@@ -1,2 +1,2 @@
 # FormKeeperJS
-Form Validation for JS 🚧
+FormKeeperJS is Easy-to-use validation for JavaScript.  
